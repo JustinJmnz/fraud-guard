@@ -1,0 +1,45 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35707.178 d17.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FraudGuard.AppHost", "fraud-guard.AppHost\FraudGuard.AppHost.csproj", "{59F4C6D0-58BF-4AD8-96AC-89A4A6A0114D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FraudGuard.ServiceDefaults", "fraud-guard.ServiceDefaults\FraudGuard.ServiceDefaults.csproj", "{3C452EF1-9749-480C-8A03-1F59AA4584F3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FraudGuard.ApiService", "fraud-guard.ApiService\FraudGuard.ApiService.csproj", "{71A9D637-D6E4-4727-A78B-DB1BC1BAA285}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FraudGuard.Web", "fraud-guard.Web\FraudGuard.Web.csproj", "{41594292-3000-435A-AE65-0BDAB7960934}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FraudGuard.Tests", "fraud-guard.Tests\FraudGuard.Tests.csproj", "{8F20D856-69BC-46B0-A8F3-9C781AEBB95B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{59F4C6D0-58BF-4AD8-96AC-89A4A6A0114D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59F4C6D0-58BF-4AD8-96AC-89A4A6A0114D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59F4C6D0-58BF-4AD8-96AC-89A4A6A0114D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59F4C6D0-58BF-4AD8-96AC-89A4A6A0114D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C452EF1-9749-480C-8A03-1F59AA4584F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C452EF1-9749-480C-8A03-1F59AA4584F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C452EF1-9749-480C-8A03-1F59AA4584F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C452EF1-9749-480C-8A03-1F59AA4584F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{71A9D637-D6E4-4727-A78B-DB1BC1BAA285}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71A9D637-D6E4-4727-A78B-DB1BC1BAA285}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71A9D637-D6E4-4727-A78B-DB1BC1BAA285}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71A9D637-D6E4-4727-A78B-DB1BC1BAA285}.Release|Any CPU.Build.0 = Release|Any CPU
+		{41594292-3000-435A-AE65-0BDAB7960934}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{41594292-3000-435A-AE65-0BDAB7960934}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{41594292-3000-435A-AE65-0BDAB7960934}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{41594292-3000-435A-AE65-0BDAB7960934}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F20D856-69BC-46B0-A8F3-9C781AEBB95B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F20D856-69BC-46B0-A8F3-9C781AEBB95B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F20D856-69BC-46B0-A8F3-9C781AEBB95B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F20D856-69BC-46B0-A8F3-9C781AEBB95B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
