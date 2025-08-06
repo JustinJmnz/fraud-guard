@@ -1,0 +1,48 @@
+{
+  "version": "0.2.0",
+  "compounds": [
+    {
+      "name": "Launch All Projects",
+      "configurations": [
+        "FraudGuard.AppHost",
+        "FraudGuard.ApiService",
+        "FraudGuard.Web"
+      ]
+    }
+  ],
+  "configurations": [
+    {
+      "name": "FraudGuard.AppHost",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build",
+      "program": "${workspaceFolder}/src/fraud-guard.AppHost/bin/Debug/net9.0/FraudGuard.AppHost.dll",
+      "args": [],
+      "cwd": "${workspaceFolder}/src/fraud-guard.AppHost",
+      "stopAtEntry": false,
+      "console": "internalConsole"
+    },
+    {
+      "name": "FraudGuard.ApiService",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build",
+      "program": "${workspaceFolder}/src/fraud-guard.ApiService/bin/Debug/net9.0/FraudGuard.ApiService.dll",
+      "args": [],
+      "cwd": "${workspaceFolder}/src/fraud-guard.ApiService",
+      "stopAtEntry": false,
+      "console": "internalConsole"
+    },
+    {
+      "name": "FraudGuard.Web",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build",
+      "program": "${workspaceFolder}/src/fraud-guard.Web/bin/Debug/net9.0/FraudGuard.Web.dll",
+      "args": [],
+      "cwd": "${workspaceFolder}/src/fraud-guard.Web",
+      "stopAtEntry": false,
+      "console": "internalConsole"
+    }
+  ]
+}

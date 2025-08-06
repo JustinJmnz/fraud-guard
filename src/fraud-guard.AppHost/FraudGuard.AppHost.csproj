@@ -12,8 +12,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\src\fraud-guard.ApiService\FraudGuard.ApiService.csproj" />
-    <ProjectReference Include="..\src\fraud-guard.Web\FraudGuard.Web.csproj" />
+    <ProjectReference Include="..\fraud-guard.ApiService\FraudGuard.ApiService.csproj" />
+    <ProjectReference Include="..\fraud-guard.Web\FraudGuard.Web.csproj" />
   </ItemGroup>
 
   <ItemGroup>

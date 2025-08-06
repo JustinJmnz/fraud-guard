@@ -12,7 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\src\fraud-guard.ServiceDefaults\FraudGuard.ServiceDefaults.csproj" />
+    <ProjectReference Include="..\fraud-guard.ServiceDefaults\FraudGuard.ServiceDefaults.csproj" />
   </ItemGroup>
 
 </Project>
