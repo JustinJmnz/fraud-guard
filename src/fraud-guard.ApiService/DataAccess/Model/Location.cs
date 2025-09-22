@@ -4,8 +4,13 @@ namespace FraudGuard.ApiService.DataAccess.Model
 {
     public class Location
     {
+        [Required]
+        [MaxLength(10)]
+        public required string Zip { get; set; }
+
+        [Required]
         [MaxLength(100)]
-        public string? City { get; set; }
+        public required string City { get; set; }
 
         [Required]
         [MaxLength(100)]

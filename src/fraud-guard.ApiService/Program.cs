@@ -1,4 +1,5 @@
 using FraudGuard.ApiService.DataAccess;
+using Npgsql.EntityFrameworkCore.PostgreSQL;
 using FraudGuard.ApiService.DataAccess.Development;
 using Microsoft.EntityFrameworkCore;
 
@@ -10,7 +11,8 @@ builder.AddServiceDefaults();
 // Add services to the container.
 builder.Services.AddProblemDetails();
 
-builder.AddSqlServerDbContext<FraudGuardContext>("fraud-guard");
+builder.Services.AddDbContext<FraudGuardContext>(options =>
+    options.UseNpgsql(builder.Configuration.GetConnectionString("fraud-guard")));
 
 if (builder.Environment.IsDevelopment())
 {

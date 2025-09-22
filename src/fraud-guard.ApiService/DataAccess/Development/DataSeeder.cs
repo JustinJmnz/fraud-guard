@@ -12,6 +12,7 @@ namespace FraudGuard.ApiService.DataAccess.Development
         public DataSeeder(FraudGuardContext context)
         {
             _context = context;
+            Bogus.Randomizer.Seed = new Random(12345);
         }
 
         public async Task SeedAsync()
@@ -28,12 +29,13 @@ namespace FraudGuard.ApiService.DataAccess.Development
                 {
                     TransactionId = Guid.NewGuid(),
                     Amount = _random.Next(10, 1000) * 0.01M, // Amount in dollars
-                    TransactionDate = DateTime.Now.AddDays(-_random.Next(365)),
+                    TransactionDate = DateTime.Now.AddDays(-_random.Next(365)).ToUniversalTime(),
                     CreditCardNumber = _faker.Finance.CreditCardNumber(CardType.Visa),
                     CardHolderName = _faker.Name.FullName(),
                     Status = GetRandomTransactionStatus(),
                     Location = new Location
                     {
+                        Zip = _faker.Address.ZipCode(),
                         City = _faker.Address.City(),
                         State = _faker.Address.State(),
                         Country = _faker.Address.Country()
